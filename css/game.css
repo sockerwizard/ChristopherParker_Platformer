@@ -1,18 +1,28 @@
-.background    { background: rgb(51, 165, 250);
+.background    { background: black;
                  table-layout: fixed;
                  border-spacing: 0;   }
 .background td { padding: 0;          }
-.lava          { background: rgb(255, 100, 100); }
-.wall          { background: white;   }
+.lava          { background: rgb(255, 50, 50); }
+.wall          { background: gray;   }
 
 .actor  { position: absolute;  }
-.player { background: rgb(100, 225, 100); }
+.player { background: white; }
 .coin { background: rgb(241, 229, 89); }
-.power { background: rgb(100, 100, 100); }
+.power { background: blue; }
+.portal{ background: green; }
+.reverse { background: purple; }
+.norm { background: purple; }
 
 .game {
   overflow: hidden;
   max-width: 600px;
   max-height: 450px;
   position: relative;
+}
+
+.lost .player {
+  background: rgb(160, 64, 64);
+}
+.won .player {
+  box-shadow: -4px -7px 8px yellow, 4px -7px 8px yellow;
 }
